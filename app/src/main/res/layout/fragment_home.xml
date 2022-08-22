@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/app_title"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/app_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/amount_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_amount"
+        android:inputType="number"
+        android:maxLength="15"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@id/from_currency_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/from_currency_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_currency"
+        app:layout_constraintBottom_toTopOf="@id/from_currency_button"
+        app:layout_constraintStart_toStartOf="@id/from_currency_button"
+        android:layout_marginBottom="4dp"
+        style="@style/TextAppearance.AppCompat.Body2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/from_currency_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/to_currency_textview"
+        android:text="@string/united_states_dollar"
+        android:textAllCaps="false"
+        android:drawableEnd="@drawable/ic_drop_down"
+        android:layout_marginBottom="48dp"/>
+
+    <TextView
+        android:id="@+id/to_currency_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_currency"
+        app:layout_constraintBottom_toTopOf="@id/to_currency_button"
+        app:layout_constraintStart_toStartOf="@id/to_currency_button"
+        android:layout_marginBottom="4dp"
+        style="@style/TextAppearance.AppCompat.Body2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/to_currency_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/exchange_result_textview"
+        android:text="@string/iraqi_dinar"
+        android:textAllCaps="false"
+        android:drawableEnd="@drawable/ic_drop_down"
+        android:layout_marginBottom="64dp"/>
+
+    <TextView
+        android:id="@+id/exchange_result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/usd"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/exchange_rate_textview"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline6"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/exchange_rate_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exchange_rate_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/convert_button"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/to_currency_button"
+        app:layout_constraintBottom_toTopOf="@id/convert_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/convert"
+        android:textAllCaps="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

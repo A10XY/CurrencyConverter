@@ -1,0 +1,44 @@
+{
+    "supported_currencies": [
+        {
+            "currency_name": "Iraqi Dinar",
+            "currency_code": "IQD"
+        },
+        {
+            "currency_name": "United States Dollar",
+            "currency_code": "USD"
+        },
+        {
+            "currency_name": "UAE Dirham",
+            "currency_code": "AED"
+        },
+        {
+            "currency_name": "Afghan Afghani",
+            "currency_code": "AFN"
+        },
+        {
+            "currency_name": "Albanian Lek",
+            "currency_code": "ALL"
+        },
+        {
+            "currency_name": "Angolan Kwanza",
+            "currency_code": "AOA"
+        },
+        {
+            "currency_name": "Netherlands Antillian Guilder",
+            "currency_code": "ANG"
+        },
+        {
+            "currency_name": "Argentine Peso",
+            "currency_code": "ARS"
+        },
+        {
+            "currency_name": "Australian Dollar",
+            "currency_code": "AUD"
+        },
+        {
+            "currency_name": "Aruban Florin",
+            "currency_code": "AWG"
+        }
+    ]
+}

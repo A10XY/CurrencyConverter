@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="app_title">CurrencyConverter</string>
+    <string name="check_connection">Error, check your connection!</string>
+    <string name="empty_amount">Empty amount, try to type some number!</string>
+    <string name="to_currency">To Currency</string>
+    <string name="united_states_dollar">United States Dollar</string>
+    <string name="iraqi_dinar">Iraqi Dinar</string>
+    <string name="usd">5000 USD</string>
+    <string name="exchange_rate_placeholder">* 1 USD = 5 GBP</string>
+    <string name="convert">Convert</string>
+    <string name="from_currency">From Currency</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="american_dollar">American Dollar</string>
+    <string name="usd_code">USD</string>
+</resources>
